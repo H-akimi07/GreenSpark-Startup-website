@@ -1,0 +1,375 @@
+/* =================================================================
+     بخش استایل‌های اختصاصی و لوکس CSS (رنگ صاف #10C98F و انیمیشن‌ها)
+================================================================= */
+@media (max-width: 991px) {
+    html,
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+}
+
+/* تنظیمات کلی بدنه پورتفولیو */
+.main-portfolio-wrapper {
+    font-family: 'Plus Jakarta Sans', Tahoma, sans-serif;
+    background-color: #FFFFFF;
+    color: #2D3748;
+    padding: 0 8%;
+    box-sizing: border-box;
+    direction: ltr; /* تراز استاندارد چپ‌چین برای متن انگلیسی */
+}
+
+/* ریست کردن و اعمال انیمیشن‌های نرم روی تمام المان‌های داخلی */
+.main-portfolio-wrapper * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* --- ۱. استایل‌های بخش هیرو (HERO SECTION) --- */
+.hero-portfolio {
+    display: flex;
+    align-items: center;
+    padding: 90px 0 60px 0;
+    gap: 60px;
+    
+}
+
+.hero-text-block {
+    flex: 1.2;
+    margin-top: 95px;
+}
+
+.badge-tag {
+    color: #10C98F; /* رنگ سبز صاف سفارشی شما */
+    font-weight: 800;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.hero-title {
+    font-size: 56px;
+    color: #0B3C2A;
+    line-height: 1.15;
+    margin-bottom: 25px;
+    font-weight: 800;
+}
+
+.highlight-text {
+    color: #10C98F;
+}
+
+.hero-description {
+    color: #718096;
+    font-size: 16px;
+    line-height: 1.72;
+    margin-bottom: 35px;
+    max-width: 540px;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.btn-primary-green {
+    background-color: #10C98F;
+    color: #FFFFFF;
+    padding: 16px 34px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-primary-green:hover {
+    background-color: #0B3C2A;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(16, 201, 143, 0.3);
+}
+
+.btn-video-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 600;
+    color: #0B3C2A;
+    text-decoration: none;
+}
+
+.btn-video-link:hover {
+    color: #10C98F;
+}
+
+.play-icon {
+    background-color: rgba(16, 201, 143, 0.12);
+    color: #10C98F;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 14px;
+}
+
+.btn-video-link:hover .play-icon {
+    background-color: #10C98F;
+    color: #FFFFFF;
+    transform: scale(1.08);
+}
+
+.hero-visual-block {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.mockup-frame {
+    width: 100%;
+    max-width: 540px;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.06);
+    margin-top: 99px;
+}
+
+.mockup-frame img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* --- ۲. استایل‌های نوار آمار شناور (FLOATING STATS BAR) --- */
+.stats-floating-bar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #FFFFFF;
+    padding: 40px 30px;
+    border-radius: 20px;
+    margin: -30px 0 90px 0;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.03);
+    border: 1px solid #F1F5F9;
+    position: relative;
+    z-index: 5;
+}
+
+.stat-box {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat-icon-wrapper {
+    color: #10C98F;
+    font-size: 24px;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.stat-num {
+    font-size: 38px;
+    font-weight: 800;
+    color: #0B3C2A;
+    margin-bottom: 4px;
+}
+
+.stat-info {
+    color: #718096;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* --- ۳. استایل‌های منوی فیلتر و گرید کارت‌ها (GRID SECTION) --- */
+.grid-portfolio-section {
+    padding-bottom: 90px;
+}
+
+.controls-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.filter-tabs {
+    display: flex;
+    gap: 10px;
+}
+
+.tab-item {
+    background-color: #F8FAFC;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #4A5568;
+    font-size: 14px;
+}
+
+.tab-item:hover, .tab-item.active {
+    background-color: #10C98F;
+    color: #FFFFFF;
+    box-shadow: 0 8px 16px rgba(16, 201, 143, 0.2);
+}
+
+.select-sort-dropdown {
+    padding: 12px 24px;
+    border-radius: 30px;
+    border: 1px solid #E2E8F0;
+    background-color: #FFFFFF;
+    color: #2D3748;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+/* گرید نمایش کارت‌ها */
+.cards-display-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 40px;
+}
+
+.project-item-card {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.01);
+    border: 1px solid #F1F5F9;
+}
+
+.project-item-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.07);
+}
+
+.thumb-area {
+    height: 260px;
+    overflow: hidden;
+    position: relative;
+}
+
+.thumb-area img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-item-card:hover .thumb-area img {
+    transform: scale(1.07); /* انیمیشن بزرگنمایی تصویر هنگام هاور */
+}
+
+.category-label {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: #E8F7F0;
+    color: #10C98F;
+    padding: 6px 16px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.details-area {
+    padding: 30px;
+}
+
+.card-title {
+    font-size: 22px;
+    color: #0B3C2A;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.card-text {
+    color: #718096;
+    font-size: 14px;
+    line-height: 1.65;
+    margin-bottom: 25px;
+    height: 46px;
+    overflow: hidden;
+}
+
+.view-project-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 700;
+    color: #0B3C2A;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.view-project-btn:hover {
+    color: #10C98F;
+    gap: 10px; /* جلو رفتن نرم آیکون فلش هنگام هاور */
+}
+
+/* --- ۴. استایل‌های بنر دعوت به همکاری (CTA BANNER) --- */
+.cta-banner-box {
+    background-color: rgba(16, 201, 143, 0.05);
+    padding: 60px 80px;
+    border-radius: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 90px;
+    border: 1px solid rgba(16, 201, 143, 0.1);
+}
+
+.cta-sub {
+    color: #10C98F;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.cta-title {
+    font-size: 38px;
+    color: #0B3C2A;
+    line-height: 1.25;
+    font-weight: 800;
+}
+
+.btn-dark-call {
+    background-color: #0B3C2A;
+    color: #FFFFFF;
+    padding: 18px 40px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-dark-call:hover {
+    background-color: #10C98F;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(16, 201, 143, 0.25);
+}
+
+/* استایل‌های ریسپانسیو و واکنش‌گرا برای موبایل و تبلت */
+@media (max-width: 992px) {
+    .hero-portfolio { flex-direction: column; text-align: center; padding: 40px 0; gap: 40px; }
+    .hero-text-block p { margin: 20px auto 30px auto; }
+    .hero-actions { justify-content: center; }
+    .hero-title { font-size: 42px; }
+    .stats-floating-bar { flex-direction: column; gap: 30px; margin-bottom: 60px; padding: 30px; }
+    .controls-bar { flex-direction: column; gap: 20px; align-items: stretch; }
+    .filter-tabs { flex-wrap: wrap; justify-content: center; }
+    .cta-banner-box { flex-direction: column; gap: 35px; text-align: center; padding: 40px; }
+    .cta-title { font-size: 30px; }
+}
