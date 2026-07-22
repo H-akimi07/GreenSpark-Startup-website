@@ -42,6 +42,232 @@
     <link rel="stylesheet" href="css/animations.css" />
     <link rel="stylesheet" href="css/responsive.css" />
 </head>
+<style>
+    /* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f6f8f7;
+}
+
+/* Section */
+
+.contact-section{
+    padding:90px 0;
+}
+
+/* Left Card */
+
+.info-card{
+    background:#155d4a;
+    color:#fff;
+    padding:45px 35px;
+    border-radius:25px;
+    height:100%;
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+}
+
+.info-box{
+    display:flex;
+    align-items:flex-start;
+    margin-bottom:30px;
+}
+
+.icon{
+    width:60px;
+    height:60px;
+    border-radius:18px;
+    background:rgba(255,255,255,.12);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:22px;
+    margin-right:18px;
+    transition:.4s;
+}
+
+.info-box:hover .icon{
+    background:#fff;
+    color:#155d4a;
+    transform:scale(1.1);
+}
+
+.info-box h5{
+    margin-bottom:5px;
+    font-weight:600;
+}
+
+.info-box p{
+    margin:0;
+    color:#d8e8e1;
+    font-size:15px;
+}
+
+/* Social */
+
+.socials{
+    margin-top:30px;
+}
+
+.socials a{
+    width:45px;
+    height:45px;
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    color:white;
+    border:1px solid rgba(255,255,255,.25);
+    border-radius:50%;
+    margin-right:10px;
+    transition:.4s;
+}
+
+.socials a:hover{
+    background:#fff;
+    color:#155d4a;
+    transform:translateY(-5px);
+}
+
+/* Right Card */
+
+.contact-card{
+    background:#fff;
+    padding:45px;
+    border-radius:25px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+/* Inputs */
+
+.custom-input{
+    height:55px;
+    border-radius:15px;
+    border:1px solid #ddd;
+    padding-left:18px;
+    transition:.3s;
+    box-shadow:none;
+}
+
+textarea.custom-input{
+    height:auto;
+    resize:none;
+    padding-top:15px;
+}
+
+.custom-input:focus{
+    border-color:#198754;
+    box-shadow:0 0 0 .18rem rgba(25,135,84,.15);
+}
+
+/* Button */
+
+.send-btn{
+    background:#198754;
+    color:#fff;
+    padding:14px 40px;
+    border-radius:40px;
+    font-weight:600;
+    transition:.35s;
+    border:none;
+}
+
+.send-btn:hover{
+    background:#146c43;
+    transform:translateY(-3px);
+    box-shadow:0 12px 25px rgba(25,135,84,.35);
+    color:#fff;
+}
+
+/* Title */
+
+h6{
+    letter-spacing:2px;
+}
+
+.display-5{
+    color:#222;
+}
+
+/* Divider */
+
+hr{
+    border-color:rgba(255,255,255,.25);
+    margin:35px 0;
+}
+
+/* Responsive */
+
+@media(max-width:991px){
+
+.info-card{
+    margin-bottom:30px;
+}
+
+.contact-card{
+    padding:35px;
+}
+
+}
+
+@media(max-width:767px){
+
+.contact-section{
+    padding:60px 15px;
+}
+
+.contact-card{
+    padding:25px;
+}
+
+.info-card{
+    padding:30px 25px;
+}
+
+.display-5{
+    font-size:2rem;
+}
+
+.send-btn{
+    width:100%;
+}
+
+.info-box{
+    flex-direction:row;
+}
+
+}
+
+@media(max-width:480px){
+
+.display-5{
+    font-size:1.7rem;
+}
+
+.icon{
+    width:50px;
+    height:50px;
+    font-size:18px;
+}
+
+.custom-input{
+    height:50px;
+}
+
+.socials a{
+    width:40px;
+    height:40px;
+}
+
+}
+</style>
 <body>
 
     <!-- Navbar Start -->
