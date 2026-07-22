@@ -1,0 +1,337 @@
+/* ==========================================================
+   SERVICES PAGE — scoped styles
+   Owner: Services section
+   Rule: every new selector is prefixed with "svc-" so this file
+   never overrides or fights with teammates' CSS files.
+   Colors / font match the shared GreenSpark system:
+     green  #10C98F   yellow #FFD34E   dark #071412 / #101827
+     light  #F8FCFB   text   #6B7280   font: Poppins
+   ========================================================== */
+
+.svc-hero,
+.svc-grid-section,
+.svc-pricing-section,
+.svc-card,
+.svc-price-card {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ----------  Services Hero  ---------- */
+
+.svc-hero {
+  padding: 280px 0 180px;
+  text-align: center;
+  background:
+    radial-gradient(circle at top right, #16bd89, transparent 40%),
+    radial-gradient(circle at bottom left, #2fe09a, transparent 35%),
+    #F8FCFB;
+}
+
+.svc-hero-tag {
+  display: inline-block;
+  padding: 10px 22px;
+  border-radius: 50px;
+  background: #eafaf5;
+  color: #10C98F;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.svc-hero-title {
+  font-size: 52px;
+  font-weight: 800;
+  line-height: 1.25;
+  color: #101918;
+}
+
+.svc-hero-title span {
+  color: #10C98F;
+}
+
+.svc-hero-text {
+  font-size: 18px;
+  color: #6B7280;
+  max-width: 620px;
+  line-height: 1.8;
+}
+
+/* ----------  Services Grid  ---------- */
+
+.svc-grid-section {
+  padding: 100px 0;
+  background: #F8FCFB;
+}
+
+.svc-card {
+  background: #ffffff;
+  height: 100%;
+  padding: 40px 32px;
+  border-radius: 24px;
+  border: 1px solid #E5E7EB;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, .05);
+  transition: .4s ease;
+}
+
+.svc-card:hover {
+  transform: translateY(-10px);
+  border-color: #10C98F;
+  box-shadow: 0 25px 60px rgba(16, 201, 143, .18);
+}
+
+.svc-icon {
+  width: 68px;
+  height: 68px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 26px;
+  background: linear-gradient(135deg, #10C98F, #087454);
+  box-shadow: 0 12px 30px rgba(16, 201, 143, .3);
+}
+
+.svc-icon i {
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.svc-card h4 {
+  font-weight: 700;
+  color: #101918;
+  margin-bottom: 14px;
+}
+
+.svc-card>p {
+  color: #6B7280;
+  line-height: 1.8;
+  margin-bottom: 22px;
+}
+
+.svc-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 26px;
+}
+
+.svc-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #4B5563;
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+
+.svc-list li i {
+  color: #10C98F;
+  font-size: 16px;
+}
+
+.svc-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #10C98F;
+  font-weight: 600;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.svc-link:hover {
+  gap: 12px;
+  color: #0A8A5A;
+}
+
+
+/* ----------  Pricing  ---------- */
+
+.svc-pricing-section {
+  position: relative;
+  overflow: hidden;
+  padding: 140px 0;
+  background:
+    radial-gradient(circle at top right, rgba(16, 201, 143, .18), transparent 35%),
+    radial-gradient(circle at bottom left, rgba(255, 211, 78, .08), transparent 30%),
+    linear-gradient(135deg, #071412, #101827, #050807);
+}
+
+.svc-pricing-subtitle {
+  color: rgba(255, 255, 255, .65);
+  max-width: 620px;
+  margin: 18px auto 0;
+  line-height: 1.9;
+}
+
+.svc-price-card {
+  position: relative;
+  height: 100%;
+  padding: 45px 35px;
+  border-radius: 28px;
+  text-align: center;
+  background: linear-gradient(145deg, rgba(255, 255, 255, .10), rgba(255, 255, 255, .04));
+  border: 1px solid rgba(255, 255, 255, .12);
+  backdrop-filter: blur(16px);
+  transition: .45s ease;
+}
+
+.svc-price-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 25px 60px rgba(16, 201, 143, .18);
+}
+
+.svc-price-featured {
+  border-color: #10C98F;
+  transform: scale(1.04);
+  box-shadow: 0 25px 60px rgba(16, 201, 143, .22);
+}
+
+.svc-price-featured:hover {
+  transform: translateY(-12px) scale(1.04);
+}
+
+.svc-price-badge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #FFD34E;
+  color: #101918;
+  padding: 6px 18px;
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.svc-price-card h5 {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 18px;
+}
+
+.svc-price {
+  color: #10C98F;
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 28px;
+}
+
+.svc-price span {
+  color: rgba(255, 255, 255, .5);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.svc-price-card .svc-list {
+  text-align: left;
+  margin-bottom: 32px;
+}
+
+.svc-price-card .svc-list li {
+  color: rgba(255, 255, 255, .75);
+}
+
+.svc-price-btn {
+  display: inline-block;
+  width: 100%;
+  padding: 14px 0;
+  border-radius: 50px;
+  background: #10C98F;
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.svc-price-btn:hover {
+  background: #0A8A5A;
+  color: #ffffff;
+  transform: translateY(-3px);
+}
+
+/* ----------  Responsive  ---------- */
+
+@media (max-width: 768px) {
+  .svc-hero {
+    padding: 150px 0 70px;
+  }
+
+  .svc-hero-title {
+    font-size: 36px;
+  }
+
+  .svc-price-featured {
+    transform: none;
+  }
+
+  .svc-price-featured:hover {
+    transform: translateY(-12px);
+  }
+}
+
+.services-cta {
+  background: #F8FCFB;
+  padding: 100px 0;
+}
+
+
+.services-cta .cta-wave svg path {
+  fill: #eafaf5;
+}
+
+
+.services-cta .cta-box {
+  background: #ffffff;
+  border: 1px solid #d9f5eb;
+  box-shadow: 0 25px 60px rgba(16, 201, 143, .12);
+}
+
+.services-cta .cta-box h2 {
+  color: #101827;
+}
+
+.services-cta .cta-box h2 span {
+  color: #17cc93;
+}
+
+.services-cta .cta-box p {
+  color: #6B7280;
+}
+
+.services-cta .cta-tag {
+  color: #10C98F;
+  background: #eafaf5;
+}
+
+.services-cta .cta-outline {
+  color: #101827;
+  border-color: #10C98F;
+}
+
+.services-cta .cta-outline:hover {
+  color: #ffffff;
+}
+
+/* Services CTA Custom Style */
+
+.services-cta .cta-wave svg path {
+  fill: #0d8861;
+}
+
+
+.services-cta .cta-box {
+  background: #ffffff;
+  border: 1px solid #04b387;
+  box-shadow: 0 25px 60px rgba(16, 201, 143, .15);
+}
+
+.services-cta .cta-wave svg path {
+  fill: #d9fbe9;
+}
+
+.services-cta .cta-outline:hover {
+  background: #10C98F;
+  color: #101827;
+  border-color: #10C98F;
+}
