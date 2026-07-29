@@ -253,3 +253,23 @@
   color: #ffffff;
   transform: translateY(-3px);
 }
+
+/* ----------  Responsive  ---------- */
+
+@media (max-width: 768px) {
+  .svc-hero {
+    padding: 150px 0 70px;
+  }
+
+  .svc-hero-title {
+    font-size: 36px;
+  }
+
+  .svc-price-featured {
+    transform: none;
+  }
+
+  .svc-price-featured:hover {
+    transform: translateY(-12px);
+  }
+}
