@@ -17,14 +17,9 @@
 }
 
 /* ----------  Services Hero  ---------- */
-/* 
+
 .svc-hero {
-  padding: 190px 0 100px;
-  text-align: center;
-  background: #F8FCFB;
-} */
-.svc-hero {
-  padding: 190px 0 100px;
+  padding: 280px 0 180px;
   text-align: center;
   background:
     radial-gradient(circle at top right, #16bd89, transparent 40%),
@@ -106,7 +101,7 @@
   margin-bottom: 14px;
 }
 
-.svc-card > p {
+.svc-card>p {
   color: #6B7280;
   line-height: 1.8;
   margin-bottom: 22px;
@@ -141,6 +136,7 @@
   text-decoration: none;
   transition: .3s;
 }
+
 .svc-link:hover {
   gap: 12px;
   color: #0A8A5A;
@@ -272,4 +268,70 @@
   .svc-price-featured:hover {
     transform: translateY(-12px);
   }
+}
+
+.services-cta {
+  background: #F8FCFB;
+  padding: 100px 0;
+}
+
+
+.services-cta .cta-wave svg path {
+  fill: #eafaf5;
+}
+
+
+.services-cta .cta-box {
+  background: #ffffff;
+  border: 1px solid #d9f5eb;
+  box-shadow: 0 25px 60px rgba(16, 201, 143, .12);
+}
+
+.services-cta .cta-box h2 {
+  color: #101827;
+}
+
+.services-cta .cta-box h2 span {
+  color: #17cc93;
+}
+
+.services-cta .cta-box p {
+  color: #6B7280;
+}
+
+.services-cta .cta-tag {
+  color: #10C98F;
+  background: #eafaf5;
+}
+
+.services-cta .cta-outline {
+  color: #101827;
+  border-color: #10C98F;
+}
+
+.services-cta .cta-outline:hover {
+  color: #ffffff;
+}
+
+/* Services CTA Custom Style */
+
+.services-cta .cta-wave svg path {
+  fill: #0d8861;
+}
+
+
+.services-cta .cta-box {
+  background: #ffffff;
+  border: 1px solid #04b387;
+  box-shadow: 0 25px 60px rgba(16, 201, 143, .15);
+}
+
+.services-cta .cta-wave svg path {
+  fill: #d9fbe9;
+}
+
+.services-cta .cta-outline:hover {
+  background: #10C98F;
+  color: #101827;
+  border-color: #10C98F;
 }
