@@ -31,3 +31,31 @@
     radial-gradient(circle at bottom left, #2fe09a, transparent 35%),
     #F8FCFB;
 }
+
+.svc-hero-tag {
+  display: inline-block;
+  padding: 10px 22px;
+  border-radius: 50px;
+  background: #eafaf5;
+  color: #10C98F;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.svc-hero-title {
+  font-size: 52px;
+  font-weight: 800;
+  line-height: 1.25;
+  color: #101918;
+}
+
+.svc-hero-title span {
+  color: #10C98F;
+}
+
+.svc-hero-text {
+  font-size: 18px;
+  color: #6B7280;
+  max-width: 620px;
+  line-height: 1.8;
+}
