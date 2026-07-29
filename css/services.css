@@ -111,3 +111,37 @@
   line-height: 1.8;
   margin-bottom: 22px;
 }
+
+.svc-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 26px;
+}
+
+.svc-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #4B5563;
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+
+.svc-list li i {
+  color: #10C98F;
+  font-size: 16px;
+}
+
+.svc-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #10C98F;
+  font-weight: 600;
+  text-decoration: none;
+  transition: .3s;
+}
+.svc-link:hover {
+  gap: 12px;
+  color: #0A8A5A;
+}
